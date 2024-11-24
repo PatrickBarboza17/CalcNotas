@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Notas - Bandeiras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1> Notas Fiscais </h1>
+
+  <!-- Formulário para adicionar valores -->
+  <form id="nota-form">
+    <div id="bandeira-container">
+     
+      <div class="bandeira-options">
+        <button type="button" class="bandeira-btn" data-value="visa_debito">Visa debito</button>
+        <button type="button" class="bandeira-btn" data-value="visa_credito">visa credito</button>
+        <button type="button" class="bandeira-btn" data-value="mastercard">mastercad</button>
+        <button type="button" class="bandeira-btn" data-value="maestro">maestro</button>
+        <button type="button" class="bandeira-btn" data-value="elo">elo</button>
+      </div>
+    </div>
+
+    <input type="hidden" id="bandeira" value=""> <!-- Campo oculto para armazenar a seleção -->
+
+    <label for="valor">Valor:</label>
+    <input type="number" id="valor" placeholder="Ex.: 100.50" step="0.01">
+    <button type="submit">➤</button>
+  </form>
+
+  <!-- Container onde as bandeiras e os valores serão exibidos -->
+  <div class="bandeiras-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

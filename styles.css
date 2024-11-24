@@ -1,0 +1,114 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+/* Formulário */
+form {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+label {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Estilos das bandeiras (botões) */
+.bandeira-options {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Permite o scroll horizontal */
+  padding-bottom: 10px; /* Espaço para o scroll não cobrir os botões */
+  margin-bottom: 20px;
+}
+
+.bandeira-btn {
+  padding: 10px 15px;
+  border: 1px solid #282828;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bandeira-btn:hover {
+  background-color: #007BFF;
+  transform: scale(1.05);
+}
+
+.bandeira-btn.active {
+  background-color: #339CFF;
+  border-color: #007BFF;
+}
+
+/* Container onde os cartões das bandeiras são exibidos (sem scroll e ocupando a largura) */
+.bandeiras-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cartões se ajustem ao tamanho da tela */
+  gap: 20px;
+  justify-content: space-around; /* Distribui os itens ao longo da largura */
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #1E1E1E;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card:hover {
+  background-color: #007BFF;
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #B0B0B0;
+}
